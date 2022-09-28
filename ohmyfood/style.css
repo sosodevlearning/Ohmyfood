@@ -33,3 +33,35 @@ padding: 0.5rem;
 main .city i {
 font-size: 1.5rem;    
 }
+/*EXPLORER*/
+.explorer{
+   text-align: center;  }
+
+ .explorer h2 {
+ margin-top: 2rem;
+ font-size: 2rem;
+}
+.explorer p {
+    font-size: 1rem;
+   
+}
+.explorer button{
+ color: white;
+ font-weight: 300;
+ font-size: 1.5rem;
+ padding: 1rem 2rem;
+ border: none;
+ box-shadow: 2px 1px 16px -3px black;
+ background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+ transition:tranform 200ms;
+ margin-top: 1rem;
+ border-radius:100px ;
+
+
+}
+
+.explorer button:hover {
+ transform:scale(1.02);
+ opacity: 0.9;
+
+}
