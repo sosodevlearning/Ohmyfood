@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet 3 OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sosodevlearning/Ohmyfood.git"
+  },
+  "author": "Sonia SOULTANA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sosodevlearning/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/sosodevlearning/Ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
