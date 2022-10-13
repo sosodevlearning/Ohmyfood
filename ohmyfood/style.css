@@ -16,6 +16,8 @@ font-family: "Roboto",sans-serif;
 header{
 font-family: "Shrikhand", cursive;
 text-align: center;
+
+
 box-shadow: 0 0 0.5rem rgb(0 0 0/ 25%);
 padding: 0.3rem;
 margin: 0;
@@ -56,12 +58,76 @@ font-size: 1.5rem;
  transition:tranform 200ms;
  margin-top: 1rem;
  border-radius:100px ;
-
-
+ -webkit-transition:tranform 200ms;
+ -moz-transition:tranform 200ms;
+ -ms-transition:tranform 200ms;
+ -o-transition:tranform 200ms;
+ -webkit-border-radius:100px ;
+ -moz-border-radius:100px ;
+ -ms-border-radius:100px ;
+ -o-border-radius:100px ;
 }
 
 .explorer button:hover {
  transform:scale(1.02);
  opacity: 0.9;
+ -webkit-transform:scale(1.02);
+ -moz-transform:scale(1.02);
+ -ms-transform:scale(1.02);
+ -o-transform:scale(1.02);
+}
+.tuto{
+  counter-reset: steps;
+
 
 }
+.tuto ol { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  }
+  @media (max-width:1000px) {
+    .tuto ol{
+      flex-direction: column;
+    }
+  }
+  
+.tuto li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem ;
+  box-shadow: 2px 1px 8px -3px #000;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+}
+  .tuto li::before{
+  content: counter(steps);
+  counter-increment: steps;
+  color: #f6f6f6;
+  background-color: #9356dc;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items:center;
+  border-radius: 50% ;
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+
+}
+
+  .tuto li:hover {
+  transform: scale(1.02);
+
+}
+.tuto li i.fas{
+margin-right: 1rem;
+color: #7e7e7e;
+font-size: 1.5rem;
+}
+  
